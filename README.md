@@ -1,7 +1,7 @@
 To run this code:
 
 1. Install node.js in your deivce. Type "node --version" and if you can see the version then node.js is installed in your device.
-2. Copy and paste the code in a file named as 'index.js".
+2. Copy and paste the code in a file named as 'index.js" or download the floder.
 3. Go to terminal and from terminal go to your "index.js" file ditectory.
 4. Then type "node index.js" to run the code.
 5. If you can see "Server in rinning" in your terminal then code is successfully executed in your devise.
