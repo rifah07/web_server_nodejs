@@ -7,3 +7,12 @@ To run (raw simple http web-server) code (index_raw.js)):
 5. If you can see "Server in rinning" in your terminal then code is successfully executed in your devise.
 6. Go to web browser and type "localhost:8000" there you should see message inside written in res.end("---").
 7. To view dynamic routing execution tyoe "localhost:8000/mars" or "localhost:8000/flowers" and you should see the message for corresponding condition.
+
+To create a new web-server using Express.js:
+
+1. Install 'npm'
+2. Go to project terminal and type "npm init"
+3. Then in terminal give a name yo your package (optional)
+4. Then keep pressing Enter, yes
+5. Then in terminal type "npm i express" to install express.js
+6. Express is now installed in your device.
