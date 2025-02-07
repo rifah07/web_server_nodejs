@@ -16,3 +16,10 @@ To create a new web-server using Express.js:
 4. Then keep pressing Enter, yes
 5. Then in terminal type "npm i express" to install express.js
 6. Express is now installed in your device.
+7. Add code in any js file (i.g. app.js, index.js. Here we used index.js)
+8. In code, first require express, then create app with express. You can see full code in index.js.
+9. Listen port, add Get methodes with request and response, see in index.js.
+10. Run code by typing "node index.js" in terminal. Go to browser and type "localhost:[port no]" as for this project- "localhost:8000".
+11. You should see response message in browser.
+12. Install Nosdemon to : automate server restarting process. So that you don't need to restart server each time after changing in code.
+13. To install Nosdemon, go to terminal and type "npm install nodemon" and press enter. Done nodemon installing.
