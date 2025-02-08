@@ -23,3 +23,7 @@ To create a new web-server using Express.js:
 11. You should see response message in browser.
 12. Install Nosdemon to : automate server restarting process. So that you don't need to restart server each time after changing in code.
 13. To install Nosdemon, go to terminal and type "npm install nodemon" and press enter. Done nodemon installing.
+14. After installing nodemon, go to "package.json" file and find "script"
+15. In the "script", there is a 'test" line, add "," at the end of the line and press "Enter" to go to new line
+16. Then type ' "start": "nodemon index.js" ' and save, here use your main file instead of "index.js"
+17. No go to terminal and type "npm start", now your restart process for this project is automated.
