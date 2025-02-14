@@ -32,9 +32,30 @@ Read file using fs(filesystem):
 
 1. Require "fs" after requiring express
 2. In the project folder add a file (for example: data.txt and add some text in is. Here I added 10 name of 10 flowers)
-3. In the [app.get("/",]- part ad fs part to read the data.
+3. In the [app.get("/",]- part add fs part to read the data.
 4. So, add - [ { fs.readFile("./data.txt", "utf-8", (err, data) => {res.send(data); });] by replacing previous res.send() paer.
 5. Now to handle error add this part before res.send- [ if (err) { res.send("There is an error to accessing the data file!")} ]
 6. Save and go to browser and see if you can see the file content there. If yes then you are right.
 7. Change the file name in code, to wrong name of file, the save and see in browser after refreshing, you should see the error message.
 8. Done this part.
+
+Write file using fs(filesystem):
+
+1. Add [app.get("/write",]- part ad fs part to read the data.
+2. Add- [ app.get("/write", (req, res) => {
+   fs.writeFile("./data.txt", "Dhalia", (err) => {
+   if (err) {
+   res.send("Error writting in file");
+   }
+   res.send("Data written successifully!");
+   });
+   });]
+
+3. So, to run that go to browser and type "localhost:8000/write"
+4. The above part will write Dhalia in data.txt and remove all the previous contents of this file.
+5. To preserve the previous contents in data.txt use appendFile.
+6. Copy paste the write part code from app.get(/write) and replace write to append. Replace writeFile with appendFile.
+7. Add "\nDhalia" in place of "Dhalia" to make each line in a new line
+8. Run with "localhost:8000/write" and "localhost:8000/append" and see result.
+9. If you haven't manually crerated data.txt file manually, then write or appendFile creates it own.
+10. Done this part.
