@@ -13,6 +13,24 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/write", (req, res) => {
+  fs.writeFile("./data.txt", "Dhalia", (err) => {
+    if (err) {
+      res.send("Error writting in file");
+    }
+    res.send("Data written successifully!");
+  });
+});
+
+app.get("/append", (req, res) => {
+  fs.appendFile("./data.txt", "\nRose", (err) => {
+    if (err) {
+      res.send("Error writting in file");
+    }
+    res.send("Data added successifully!");
+  });
+});
+
 app.get("/mars", (req, res) => {
   res.send("Hi, this is from mars.");
 });
