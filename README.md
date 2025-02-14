@@ -41,7 +41,7 @@ Read file using fs(filesystem):
 
 Write file using fs(filesystem):
 
-1. Add [app.get("/write",]- part ad fs part to read the data.
+1. Add [app.get("/write",]- part ad fs part to read the data
 2. Add- [ app.get("/write", (req, res) => {
    fs.writeFile("./data.txt", "Dhalia", (err) => {
    if (err) {
@@ -58,4 +58,5 @@ Write file using fs(filesystem):
 7. Add "\nDhalia" in place of "Dhalia" to make each line in a new line
 8. Run with "localhost:8000/write" and "localhost:8000/append" and see result.
 9. If you haven't manually crerated data.txt file manually, then write or appendFile creates it own.
-10. Done this part.
+10. To know more about fs , in browser go to "https://nodejs.org/api/fs.html" .
+11. Done this part.
